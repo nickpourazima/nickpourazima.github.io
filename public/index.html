@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+  <title>Nick Pourazima</title>
+  <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+  <style>body, html {
+  padding-top:2.5em;
+  margin:0;
+  background-color:#fafafa;
+}
+
+.note {
+  display:block;
+  position: absolute;
+  top:10px;
+  left:10px;
+
+  font-family: "Open Sans";
+  font-size: 0.6em;
+}
+
+.new {
+  background-color: #81C784;
+
+  border: 1px solid #757575;
+  padding: 1px;
+  border-radius: 4px;
+
+}
+
+/* Header */
+
+header {
+  width:100%;
+  vertical-align: middle;
+  text-align: center;
+ 
+}
+
+.header-content {
+  display: inline-block;
+}
+
+.pic {
+  margin: 0 auto;
+  margin-top:-2.5em;
+  
+  border-radius:10em;
+  height:4em;
+  width:4em;
+  
+  border: 2px solid #e0e0e0;
+  transition : all 0.5s linear;
+  
+}
+
+@-webkit-keyframes wiggle {
+  0%   {
+    transform: rotate(0deg);
+  }
+  25%  {
+    transform: rotate(-30deg);
+  }
+  50%  {
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.pic:hover {
+  /*Webkit fix*/
+  -webkit-transform: translateZ(0);
+  
+  cursor:pointer;
+  
+  -webkit-animation: wiggle 0.7s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+.header-text {
+  margin-top:0.5em;
+  margin-left:1em;
+}
+
+header p {
+  text-align:center;
+  font-family: "Merriweather";
+  
+  margin:0;
+  
+  color: #212121;
+}
+
+.first-name {
+   font-size: 1.05em;
+}
+
+.subtitle {
+  font-family: "Merriweather";
+  padding-top:.3em;
+  font-size:0.55em;
+  font-weight:500;
+  color: #424242;
+}
+
+/* Information */
+
+.paper {
+  margin: 0 auto;
+  margin-bottom:1em;
+  
+  background-color:white;
+  width:60%;
+  
+  padding:0.5em 0 0.5em 0;
+  
+  border-top: 1px solid #e0e0e0;
+  border-left: 1px solid #e0e0e0;
+  border-right: 1px solid #e0e0e0;
+  border-bottom: 3px solid #e0e0e0;
+  border-radius:3px;
+}
+
+@media(max-width:992px) {
+  .paper {
+    width:80%;
+  }
+}
+
+/* Content Part */
+
+.content-wrapper {
+  padding-right:7.25%;
+}
+
+.content {
+  display:table;
+  width:100%;
+  
+  padding-top:1.5em;
+  
+  /*border-top: 1px solid #eeeeee;*/
+}
+
+.content:last-child {
+  margin-bottom: 2em;
+}
+
+body > div > article > div > section:last-child {
+  padding-bottom:1.5em;
+}
+
+.row {
+    display:table-row;
+}
+.row div {
+    display:table-cell;
+}
+
+.content-cat {
+  font-family: "Merriweather";
+  font-variant:small-caps;
+  font-weight:300;
+  letter-spacing: 1px;
+  
+  color: #212121;
+  
+  font-size:0.975em;
+  
+  text-align:center;
+  vertical-align:middle;
+
+  padding-left:6.66%;
+  width:30%;
+}
+
+.content-cat p {
+  font-size:0.55em;
+  font-weight:600;
+  
+  margin-bottom:0;
+}
+
+.content-text {
+  border-left:1px solid #e0e0e0;
+  transition: border 0.66s ease-in;
+}
+
+.big-text {
+  vertical-align:top;
+}
+
+.content-text ul {
+  padding:0;
+  margin:0;
+  margin-top:0.15em;
+  
+  width:85%;
+  margin-left:1.5em;
+}
+
+.content-text ul:last-child {
+  margin-bottom:0.5em;
+}
+
+.content-text ul li {
+  font-family: "Open Sans";
+  font-size:0.7em;
+  
+  display:inline-block;
+  
+}
+
+.content-text ul li:first-child {
+  width:35%;
+  
+  color: #424242;
+  
+  font-weight:600;
+}
+
+.content-text ul li a, div.content-text.work-listing.education-listing > p > strong > a {
+  text-decoration: none;
+  color: #0277bd;
+}
+
+.content-text ul li a:hover {
+  color:#4fc3f7;
+}
+
+.work-listing p {
+  font-family: "Open Sans";
+  font-size:0.7em;
+  
+  color: #424242;
+  
+  margin-left:2em;
+  margin-top:0.45em;
+  margin-bottom: 0.45em;
+}
+
+div.content-text.work-listing.education-listing > p:nth-child(2) {
+  margin-top:0.25em;
+}
+
+.work-listing .highlight {
+  font-family: "Open Sans";
+  font-size:0.7em;
+  font-weight:400;
+  
+  color: #424242;
+  
+  margin-left:3.25em;
+  padding-left:0.5em;
+  
+  border-left:1px solid #e0e0e0;
+  
+}
+
+.education-listing > .heading {
+  font-weight:600;
+  
+  margin-top:0.75em;
+  margin-left:2em;
+}
+
+.education-listing > .highlight {
+  margin-left:3.25em;
+}
+
+.highlight {
+  transition: border .33s ease-in;
+}
+
+.profiles-listing ul li, .profiles-listing ul li:first-child {
+  width:32%;
+  font-weight: normal;
+}
+
+.work-content, .education-content {
+  padding-top: .75em;
+}
+
+section.content.education-content > div > div.content-cat {
+  vertical-align: top;
+}
+
+div.content-text.skills-listing > p {
+  font-family: "Open Sans";
+  font-size:0.7em;
+  font-weight:400;
+
+  margin-left: 2em;
+  margin-top: 0.45em;
+  margin-bottom: 0.45em;
+}
+
+div.content-text.skills-listing > p > {
+  color:#212121;
+}
+
+@media screen and (max-width: 600px) {
+  body, html {
+    padding-top: 30px;
+  }
+
+  .paper {
+    width:95%;
+  }
+
+  .row div {
+    display: block;
+  }
+
+  .content-cat {
+    width: 100%;
+  }
+
+  .content-text ul li {
+    width: 100%;
+  }
+
+  .content-text ul li:first-child {
+    width: 100%;
+  }
+  
+  .education-listing > .highlight {
+    margin-left: 30px;
+  }
+}</style>
+  <style media="print">
+body, html {
+  background-color: white;
+  padding-top: 1.5em;
+}
+
+.paper {
+  width:100%;
+  border: 0;
+
+  padding-top: 0;
+}
+
+header p {
+  font-size: 1.3em;
+}
+
+.subtitle {
+  font-size: 0.7em;
+}
+
+.header-pic {
+  float:left;
+}
+
+.profiles {
+  display:none;
+}
+
+.content {
+  page-break-inside:avoid; 
+  page-break-after:auto;
+}
+
+.header-text {
+  float:left;
+  margin-top: -1.6em;
+}
+
+.content-wrapper > .content:first-child {
+  padding-top: 2em;
+}
+
+.content:last-child {
+  padding-bottom: 0;
+}
+
+.content-cat {
+  width:33%;
+  color:black;
+  text-align: left;
+}
+
+.content-cat p {
+  font-size:0.6em;
+  font-weight: 600;
+}
+
+header p, .content-text, .work-listing p, .content-text ul li:first-child, .work-listing .highlight, .content-text.skills-listing > ul > li > .highlight {
+  color:black;
+}
+
+.content-text.skills-listing > ul > li span, .subtitle {
+  color:#212121;
+}
+
+.content-text ul:last-child {
+  margin-bottom: 0.25em;
+}
+
+.content-text ul li:first-child {
+  width:50%;
+}
+
+.profiles-listing ul li:first-child {
+  width:32%;
+}
+
+div.content-text.skills-listing > ul > li {
+  width:33%;
+}
+
+.work-listing p {
+  margin-bottom: 0.1em;
+}
+
+div.content-text.skills-listing > ul > li > p {
+  margin-top: 0.4em;
+  margin-bottom: 0.5em;
+}
+
+div.content-text.skills-listing > ul > li {
+  padding-left: 1.5em;
+}
+
+div.content-text.skills-listing > ul > li:first-child {
+  padding-left: 2em;
+}
+
+.note {
+  display:none;
+}
+
+.content-text:hover {
+  border-left:1px solid #eeeeee;
+}
+
+.content-text ul li a:hover {
+  color:#4fc3f7;
+}
+
+.highlight:hover, .content-text.skills-listing > ul > li > .highlight:hover {
+  border-left:1px solid #eeeeee;
+}
+
+.big-text {
+  padding-top: 0;
+}</style>
+</head>
+<body>
+  <div class="resume-wrapper">
+    <article class="paper">
+        <header>
+          <div class="header-content">
+              <div class="header-pic">
+                <img src="https://avatars2.githubusercontent.com/u/12181252?s=400&amp;v=4" class="pic" />
+              </div>
+            <div class="header-text">
+              <p>
+                Nick Pourazima
+              </p>
+              <p class="subtitle">Acoustic Engineer</p>
+            </div>
+          </div>
+        </header>
+        <div class="content-wrapper">
+          <!-- CONTACT -->
+          <section class="content">
+            <div class="row">
+              <div class="content-cat">
+                Contact
+              </div>
+              <div class="content-text">
+                  <ul>
+                    <li>Email</li>
+                    <li>nick@pourazima.com</li>
+                  </ul>
+              </div>
+            </div>
+          </section>
+          <!-- LOCATION -->
+              <section class="content">
+                <div class="row">
+                  <div class="content-cat">
+                    Location
+                  </div>
+                  <div class="content-text">
+                        <ul>
+                          <li>Postal Code & City</li>
+                          <li>VA 22302 Alexandria</li>
+                        </ul>
+                      <ul>
+                        <li>Region</li>
+                        <li>Virginia</li>
+                      </ul>
+                  </div>
+                </div>
+              </section>
+        
+                <section class="content">
+                  <div class="row">
+                    <div class="content-cat big-text">
+                        Work  Experience
+                          <p>2020-01-27 till today</p>
+                    </div>
+                    <div class="content-text work-listing education-listing">
+                          <p style="margin-top:2.4em;">
+                          <strong>Acoustic Engineer</strong>
+                          at <strong><a href="https://research.fb.com/category/augmented-reality-virtual-reality/">Facebook Reality Labs:</a></strong>
+                        </p>
+                        <p>Facebook Reality Labs is an AR/VR company creating the future of personal and shared reality.</p>
+                          <p class="highlight">Head-related transfer function research project</p>
+                          <p class="highlight">Acoustic design and test</p>
+                    </div>
+                  </div>
+                </section>
+                <section class="content work-content">
+                  <div class="row">
+                    <div class="content-cat big-text">
+                          <p>2019-07-22 till 2019-08-23</p>
+                    </div>
+                    <div class="content-text work-listing education-listing">
+                          <p>
+                          <strong>Acoustic Engineer</strong>
+                          at <strong><a href="https://www.princeton.edu/3D3A/">Princeton University:</a></strong>
+                        </p>
+                        <p>Worked on two projects involving audio filter design for stereo image widening as well as assisted in the plasma physics laboratory.</p>
+                          <p class="highlight">Crosstalk cancellation</p>
+                          <p class="highlight">Plasma Physics Lab</p>
+                          <p class="highlight">3D Audio Research</p>
+                          <p class="highlight">Transducer / Loudspeaker design</p>
+                          <p class="highlight">Large-scale audio test development</p>
+                    </div>
+                  </div>
+                </section>
+                <section class="content work-content">
+                  <div class="row">
+                    <div class="content-cat big-text">
+                          <p>2018-09-04 till 2019-07-15</p>
+                    </div>
+                    <div class="content-text work-listing education-listing">
+                          <p>
+                          <strong>Acoustic Engineer</strong>
+                          at <strong><a href="https://research.fb.com/category/augmented-reality-virtual-reality/">Facebook Reality Labs:</a></strong>
+                        </p>
+                        <p>Facebook Reality Labs is an AR/VR company creating the future of personal and shared reality.</p>
+                          <p class="highlight">HRTF / Soundfield Reconstruction research</p>
+                          <p class="highlight">Transducer / Loudspeaker design</p>
+                          <p class="highlight">Large-scale audio test development</p>
+                    </div>
+                  </div>
+                </section>
+                <section class="content work-content">
+                  <div class="row">
+                    <div class="content-cat big-text">
+                          <p>2016-08-01 till 2018-08-01</p>
+                    </div>
+                    <div class="content-text work-listing education-listing">
+                          <p>
+                          <strong>Audio Engineer</strong>
+                          at <strong><a href="https://www.cmu.edu/cfa/music/current-students/guidelines-forms/recording.html">Carnegie Mellon University:</a></strong>
+                        </p>
+                        <p>Setup, record, strike, mixing / mastering for live concerts / ensembles / small groups / private auditions throughout CMU theaters and off-site venues.</p>
+                          <p class="highlight">Microphone recording techniques.</p>
+                          <p class="highlight">Live mixing experience.</p>
+                    </div>
+                  </div>
+                </section>
+                <section class="content work-content">
+                  <div class="row">
+                    <div class="content-cat big-text">
+                          <p>2017-06-01 till 2017-08-01</p>
+                    </div>
+                    <div class="content-text work-listing education-listing">
+                          <p>
+                          <strong>Summer Internship</strong>
+                          at <strong><a href="https://oswaldsmillaudio.com/">Oswald&#x27;s Mill Audio:</a></strong>
+                        </p>
+                        <p>Worked closely with CEO to develop asset management system from scratch. Learned loudspeaker acoustic test principles as well as assembly from a production standpoint.</p>
+                          <p class="highlight">Loudspeaker / crossover network assembly and test</p>
+                          <p class="highlight">Asset management system design</p>
+                    </div>
+                  </div>
+                </section>
+                <section class="content work-content">
+                  <div class="row">
+                    <div class="content-cat big-text">
+                          <p>2013-07-01 till 2016-07-01</p>
+                    </div>
+                    <div class="content-text work-listing education-listing">
+                          <p>
+                          <strong>Sales Engineer</strong>
+                          at <strong><a href="https://www.rohde-schwarz.com">Rohde &amp; Schwarz:</a></strong>
+                        </p>
+                        <p>Consulted on technical solutions for 5G and other leading-edge projects at Qualcomm, San Diego. Tailored test and measurement equipment to their requirements.</p>
+                          <p class="highlight">Developed new tools and automation methods to streamline the sales process</p>
+                          <p class="highlight">Conducted demonstrations and presentations tailored to customer requirements.</p>
+                          <p class="highlight">In-depth knowledge of RF and other bench-top equipment including: radio base station emulators, signal generators, spectrum analyzers, oscilloscopes.</p>
+                    </div>
+                  </div>
+                </section>
+                <section class="content work-content">
+                  <div class="row">
+                    <div class="content-cat big-text">
+                          <p>2011-07-01 till 2013-07-01</p>
+                    </div>
+                    <div class="content-text work-listing education-listing">
+                          <p>
+                          <strong>Hardware / Firmware Test Engineer</strong>
+                          at <strong><a href="http://www.westerndigital.com">Western Digital:</a></strong>
+                        </p>
+                        <p>Developed test plans and procedures per specifications of the branded product line (NAS, routers, WDTV). Brought up these products from initial design to final deployment.</p>
+                          <p class="highlight">Project management and test of all new online services on WDTV</p>
+                          <p class="highlight">Python automation development</p>
+                    </div>
+                  </div>
+                </section>
+                <section class="content work-content">
+                  <div class="row">
+                    <div class="content-cat big-text">
+                          <p>2017-10-10 till 2018-05-19</p>
+                    </div>
+                    <div class="content-text work-listing education-listing">
+                          <p>
+                          <strong>Graduate Thesis</strong>
+                          at <strong><a href="http://github.com/nickpourazima/he-sm">Carnegie Mellon University:</a></strong>
+                        </p>
+                        <p>Designed a haptic environmental sensing metronome which filled the interstitial space to provide more meaningful entrainment.</p>
+                          <p class="highlight">Arduino development</p>
+                          <p class="highlight">Haptic design</p>
+                    </div>
+                  </div>
+                </section>
+                <section class="content work-content">
+                  <div class="row">
+                    <div class="content-cat big-text">
+                          <p>2017-11-10 till 2019-11-10</p>
+                    </div>
+                    <div class="content-text work-listing education-listing">
+                          <p>
+                          <strong>Design Engineer / CTO</strong>
+                          at <strong><a href="https://youtu.be/POCaFBiBa0g">MoodRing 2.0:</a></strong>
+                        </p>
+                        <p>Designed a wearable device which allows touch selection of a color to represent mood paired with an app which enabled sharing of your current mood with a loved one.</p>
+                          <p class="highlight">Helped spread emotional intelligence awareness</p>
+                          <p class="highlight">Startup experience</p>
+                    </div>
+                  </div>
+                </section>
+                <section class="content work-content">
+                  <div class="row">
+                    <div class="content-cat big-text">
+                          <p>2009-06-01 till 2011-06-01</p>
+                    </div>
+                    <div class="content-text work-listing education-listing">
+                          <p>
+                            <strong>Founder</strong>
+                            at <strong>New Age Baby Monitor:</strong>
+                        </p>
+                        <p>Designed a wearable baby monitor which monitored for risks of SIDS for my capstone project at UCI.</p>
+                          <p class="highlight">Design engineering</p>
+                          <p class="highlight">Wearables</p>
+                    </div>
+                  </div>
+                </section>
+                <section class="content work-content">
+                  <div class="row">
+                    <div class="content-cat big-text">
+                          <p>2017-01-01 till 2017-05-01</p>
+                    </div>
+                    <div class="content-text work-listing education-listing">
+                          <p>
+                          <strong>Student</strong>
+                          at <strong><a href="https://jessestil.es/phipps">Carnegie Mellon University - Experimental Sound Synthesis:</a></strong>
+                        </p>
+                        <p>Generated dynamic sound design for the Butterfly Lounge exhibit at Phipps Conservatory</p>
+                          <p class="highlight">Sound design</p>
+                    </div>
+                  </div>
+                </section>
+
+
+                <section class="content">
+                  <div class="row">
+                    <div class="content-cat big-text">
+                        Education
+                          <p>2011-05-15 till 2007-09-10</p>
+                    </div>
+                    <div class="content-text work-listing education-listing">
+                          <p class="heading" style="margin-top:2.35em;">University of California, Irvine</p>
+                        <p class="highlight">
+                          Bachelors of Science:
+                          <i>Electrical Engineering </i>
+                        </p>
+                    </div>
+                  </div>
+                </section>
+                <section class="content education-content">
+                  <div class="row">
+                    <div class="content-cat big-text">
+                          <p>2018-05-10 till 2016-09-24</p>
+                    </div>
+                    <div class="content-text work-listing education-listing">
+                          <p class="heading">Carnegie Mellon University</p>
+                        <p class="highlight">
+                          Masters of Science:
+                          <i>Music &amp; Technology </i>
+                        </p>
+                    </div>
+                  </div>
+                </section>
+
+
+          <section class="content">
+            <div class="row">
+              <div class="content-cat">
+                Skills
+              </div>
+              <div class="content-text skills-listing">
+                  <p>
+                    <span class="name">
+                        <strong>
+                          Coding
+                        </strong>
+                    </span>
+                      <span>(Intermediate):</span>
+                      Python, C++, C, Matlab
+                  </p>
+                  <p>
+                    <span class="name">
+                        <strong>
+                          Rapid Prototyping
+                        </strong>
+                    </span>
+                      <span>(Intermediate):</span>
+                      Solidworks, NX, Arduino, Adafruit, RPi, Particle, Processing, PureData
+                  </p>
+                  <p>
+                    <span class="name">
+                        <strong>
+                          3D Printing
+                        </strong>
+                    </span>
+                      <span>(Intermediate):</span>
+                      Form Labs, Stratasys
+                  </p>
+                  <p>
+                    <span class="name">
+                        <strong>
+                          Audio Design &amp; Test
+                        </strong>
+                    </span>
+                      <span>(Advanced):</span>
+                      Audio Precision, Audio Calibration, Bidule, COMSOL, DSP, Electroacoustics, Synthesis, Transducer Design, Max MSP, MEMS Transducers, Mixing, Mastering
+                  </p>
+                  <p>
+                    <span class="name">
+                        <strong>
+                          Machine Learning
+                        </strong>
+                    </span>
+                      <span>(Novice):</span>
+                      Weka, R, Spotify API
+                  </p>
+                  <p>
+                    <span class="name">
+                        <strong>
+                          Music Composition
+                        </strong>
+                    </span>
+                      <span>(Intermediate):</span>
+                      Guitar, Piano, Bass
+                  </p>
+                  <p>
+                    <span class="name">
+                        <strong>
+                          Music Production
+                        </strong>
+                    </span>
+                      <span>(Advanced):</span>
+                      Logic Pro, Pro-Tools, Ableton Live
+                  </p>
+              </div>
+            </div>
+          </section>
+
+  <!-- LANGUAGE -->
+            <section class="content">
+              <div class="row">
+                <div class="content-cat">
+                  Languages
+                </div>
+                <div class="content-text">
+                    <ul>
+                        <li>English</li>
+                        <li>Native speaker</li>
+                    </ul>
+                </div>
+              </div>
+            </section>
+            <!-- PROFILES -->
+              <section class="content profiles">
+                <div class="row">
+                  <div class="content-cat">
+                    Profiles
+                  </div>
+                  <div class="content-text profiles-listing">
+                    <ul>
+                          <li>
+                            <a href="https://github.com/nickpourazima" target="_blank">
+                              github
+                            </a>
+                          </li>
+                    </ul>
+                  </div>
+                </div>
+              </section>
+
+            <section class="content">
+              <div class="row">
+                <div class="content-cat">
+                  Interests
+                </div>
+                <div class="content-text skills-listing">
+                    <p>
+                      <span class="name">
+                          <strong>
+                            Prototyping
+                          </strong>
+                      </span>
+                    </p>
+                    <p>
+                      <span class="name">
+                          <strong>
+                            Music
+                          </strong>
+                      </span>
+                    </p>
+                    <p>
+                      <span class="name">
+                          <strong>
+                            Cosmology / Astronomy
+                          </strong>
+                      </span>
+                    </p>
+                </div>
+              </div>
+            </section>
+
+        </div>
+    </article>
+  </div>
+</body>
+</html>
