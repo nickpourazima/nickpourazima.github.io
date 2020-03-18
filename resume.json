@@ -1,0 +1,276 @@
+{
+    "basics": {
+        "name": "Nick Pourazima",
+        "label": "Acoustic Engineer",
+        "picture": "https://avatars2.githubusercontent.com/u/12181252?s=400&v=4",
+        "summary": "I am a technically adept and creatively oriented individual; a trained engineer and practiced musician who is deeply driven to utilize my skills toward the betterment of society.",
+        "email": "nick@pourazima.com",
+        "location": {
+            "postalCode": "VA 22302",
+            "city": "Alexandria",
+            "countryCode": "US",
+            "region": "Virginia"
+        },
+        "profiles": [
+            {
+                "url": "https://github.com/nickpourazima",
+                "username": "nickpourazima",
+                "network": "github"
+            }
+        ]
+    },
+    "education": [
+        {
+            "startDate": "2011-05-15",
+            "endDate": "2007-09-10",
+            "area": "Electrical Engineering",
+            "studyType": "Bachelors of Science",
+            "institution": "University of California, Irvine"
+        },
+        {
+            "startDate": "2018-05-10",
+            "endDate": "2016-09-24",
+            "area": "Music & Technology",
+            "studyType": "Masters of Science",
+            "institution": "Carnegie Mellon University"
+        }
+    ],
+    "skills": [
+        {
+            "keywords": [
+                "Python",
+                "C++",
+                "C",
+                "Matlab"
+            ],
+            "level": "Intermediate",
+            "name": "Coding"
+        },
+        {
+            "keywords": [
+                "Solidworks",
+                "NX",
+                "Arduino",
+                "Adafruit",
+                "RPi",
+                "Particle",
+                "Processing",
+                "PureData"
+            ],
+            "level": "Intermediate",
+            "name": "Rapid Prototyping"
+        },
+        {
+            "keywords": [
+                "Form Labs",
+                "Stratasys"
+            ],
+            "level": "Intermediate",
+            "name": "3D Printing"
+        },
+        {
+            "keywords": [
+                "Audio Precision",
+                "Audio Calibration",
+                "Bidule",
+                "COMSOL",
+                "DSP",
+                "Electroacoustics",
+                "Synthesis",
+                "Transducer Design",
+                "Max MSP",
+                "MEMS Transducers",
+                "Mixing",
+                "Mastering"
+            ],
+            "level": "Advanced",
+            "name": "Audio Design & Test"
+        },
+        {
+            "keywords": [
+                "Weka",
+                "R",
+                "Spotify API"
+            ],
+            "level": "Novice",
+            "name": "Machine Learning"
+        },
+        {
+            "keywords": [
+                "Guitar",
+                "Piano",
+                "Bass"
+            ],
+            "level": "Intermediate",
+            "name": "Music Composition"
+        },
+        {
+            "keywords": [
+                "Logic Pro",
+                "Pro-Tools",
+                "Ableton Live"
+            ],
+            "level": "Advanced",
+            "name": "Music Production"
+        }
+    ],
+    "work": [
+        {
+            "summary": "Facebook Reality Labs is an AR/VR company creating the future of personal and shared reality.",
+            "website": "https://research.fb.com/category/augmented-reality-virtual-reality/",
+            "company": "Facebook Reality Labs",
+            "location": "Pittsburgh, PA / Washington, D.C.",
+            "position": "Acoustic Engineer",
+            "startDate": "2020-01-27",
+            "highlights": [
+                "Head-related transfer function research project",
+                "Acoustic design and test"
+            ]
+        },
+        {
+            "summary": "Worked on two projects involving audio filter design for stereo image widening as well as assisted in the plasma physics laboratory.",
+            "website": "https://www.princeton.edu/3D3A/",
+            "company": "Princeton University",
+            "location": "Princeton, NJ",
+            "position": "Acoustic Engineer",
+            "startDate": "2019-07-22",
+            "endDate": "2019-08-23",
+            "highlights": [
+                "Crosstalk cancellation",
+                "Plasma Physics Lab",
+                "3D Audio Research",
+                "Transducer / Loudspeaker design",
+                "Large-scale audio test development"
+            ]
+        },
+        {
+            "summary": "Facebook Reality Labs is an AR/VR company creating the future of personal and shared reality.",
+            "website": "https://research.fb.com/category/augmented-reality-virtual-reality/",
+            "company": "Facebook Reality Labs",
+            "location": "Pittsburgh, PA",
+            "position": "Acoustic Engineer",
+            "startDate": "2018-09-04",
+            "endDate": "2019-07-15",
+            "highlights": [
+                "HRTF / Soundfield Reconstruction research",
+                "Transducer / Loudspeaker design",
+                "Large-scale audio test development"
+            ]
+        },
+        {
+            "summary": "Setup, record, strike, mixing / mastering for live concerts / ensembles / small groups / private auditions throughout CMU theaters and off-site venues.",
+            "website": "https://www.cmu.edu/cfa/music/current-students/guidelines-forms/recording.html",
+            "company": "Carnegie Mellon University",
+            "position": "Audio Engineer",
+            "startDate": "2016-08-01",
+            "endDate": "2018-08-01",
+            "highlights": [
+                "Microphone recording techniques.",
+                "Live mixing experience."
+            ]
+        },
+        {
+            "summary": "Worked closely with CEO to develop asset management system from scratch. Learned loudspeaker acoustic test principles as well as assembly from a production standpoint.",
+            "website": "https://oswaldsmillaudio.com/",
+            "company": "Oswald's Mill Audio",
+            "position": "Summer Internship",
+            "startDate": "2017-06-01",
+            "endDate": "2017-08-01",
+            "highlights": [
+                "Loudspeaker / crossover network assembly and test",
+                "Asset management system design"
+            ]
+        },
+        {
+            "summary": "Consulted on technical solutions for 5G and other leading-edge projects at Qualcomm, San Diego. Tailored test and measurement equipment to their requirements.",
+            "website": "https://www.rohde-schwarz.com",
+            "company": "Rohde & Schwarz",
+            "position": "Sales Engineer",
+            "startDate": "2013-07-01",
+            "endDate": "2016-07-01",
+            "highlights": [
+                "Developed new tools and automation methods to streamline the sales process",
+                "Conducted demonstrations and presentations tailored to customer requirements.",
+                "In-depth knowledge of RF and other bench-top equipment including: radio base station emulators, signal generators, spectrum analyzers, oscilloscopes."
+            ]
+        },
+        {
+            "summary": "Developed test plans and procedures per specifications of the branded product line (NAS, routers, WDTV). Brought up these products from initial design to final deployment.",
+            "website": "http://www.westerndigital.com",
+            "company": "Western Digital",
+            "position": "Hardware / Firmware Test Engineer",
+            "startDate": "2011-07-01",
+            "endDate": "2013-07-01",
+            "highlights": [
+                "Project management and test of all new online services on WDTV",
+                "Python automation development"
+            ]
+        },
+        {
+            "summary": "Designed a haptic environmental sensing metronome which filled the interstitial space to provide more meaningful entrainment.",
+            "website": "http://github.com/nickpourazima/he-sm",
+            "company": "Carnegie Mellon University",
+            "position": "Graduate Thesis",
+            "startDate": "2017-10-10",
+            "endDate": "2018-05-19",
+            "highlights": [
+                "Arduino development",
+                "Haptic design"
+            ]
+        },
+        {
+            "summary": "Designed a wearable device which allows touch selection of a color to represent mood paired with an app which enabled sharing of your current mood with a loved one.",
+            "website": "https://youtu.be/POCaFBiBa0g",
+            "company": "MoodRing 2.0",
+            "position": "Design Engineer / CTO",
+            "startDate": "2017-11-10",
+            "endDate": "2019-11-10",
+            "highlights": [
+                "Helped spread emotional intelligence awareness",
+                "Startup experience"
+            ]
+        },
+        {
+            "summary": "Designed a wearable baby monitor which monitored for risks of SIDS for my capstone project at UCI.",
+            "company": "New Age Baby Monitor",
+            "position": "Founder",
+            "startDate": "2009-06-01",
+            "endDate": "2011-06-01",
+            "highlights": [
+                "Design engineering",
+                "Wearables"
+            ]
+        },
+        {
+            "summary": "Generated dynamic sound design for the Butterfly Lounge exhibit at Phipps Conservatory",
+            "website": "https://jessestil.es/phipps",
+            "company": "Carnegie Mellon University - Experimental Sound Synthesis",
+            "position": "Student",
+            "startDate": "2017-01-01",
+            "endDate": "2017-05-01",
+            "highlights": [
+                "Sound design"
+            ]
+        }
+    ],
+    "languages": [
+        {
+            "language": "English",
+            "fluency": "Native speaker"
+        }
+    ],
+    "interests": [
+        {
+            "name": "Prototyping"
+        },
+        {
+            "name": "Music"
+        },
+        {
+            "name": "Cosmology / Astronomy"
+        }
+    ],
+    "meta": {
+        "theme": "elegant"
+    }
+}
