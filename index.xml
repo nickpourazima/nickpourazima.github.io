@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Nick Pourazima&#39;s Website</title>
-    <link>https://pourazima.com/</link>
+    <link>https://nickpourazima.github.io/</link>
     <description>Recent content on Nick Pourazima&#39;s Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	<atom:link href="https://pourazima.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://nickpourazima.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
